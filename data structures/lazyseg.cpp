@@ -28,7 +28,7 @@ void update(int node, int l, int r, int a, int b, int val){
 		lazy[node]=0;
 	}
 
-	if(r<a || l>b)	return;		//intervalo invalido
+	if(r<a || l>b || l>r)	return;		//intervalo invalido
 
 	else if(a<=l && r<=b){		//update cobre o no
 		segtree[node]+=val*(r-l+1);
@@ -59,12 +59,10 @@ int query(int node, int l, int r, int a, int b){
 		lazy[node]=0;
 	}	
 
-	if(r<a || l>b)	return	0;	//ou qualquer indicador invalido, depende
+	if(r<a || l>b || l>r)	return	0;	//ou qualquer indicador invalido, depende
 
 	else if(a<=l && r<=b)	return segree[node];
 
 	else	return query(lc,l,mid,a,b) + query(rc,mid+1,r,a,b);
-
-	
 
 }
