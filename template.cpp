@@ -11,16 +11,17 @@ using namespace std;
 
 #define ms(x,i)	memset(x,i,sizeof(x))
 #define dbg(x)	cout << #x << " = " << x << endl
+#define all(x)	x.begin(),x.end()
 
 #define gnl cout << endl
 #define olar cout << "olar" << endl
-#define gottagofast ios_base::sync_with_stdio(false); cin.tie(NULL)
+#define fastio ios_base::sync_with_stdio(false); cin.tie(NULL)
 
-typedef pair<int,int> pii;
-typedef pair<long long int,long long int> pll;
-typedef vector<int> vi;
-typedef vector< pair<int,int> > vii;
 typedef long long int ll;
+typedef pair<int,int> pii;
+typedef vector<int> vi;
+typedef vector<pii> vii;
+typedef pair<ll,ll> pll;
 
 const int INF = 0x3f3f3f3f;
 const ll llINF = 0x3f3f3f3f3f3f3f;
