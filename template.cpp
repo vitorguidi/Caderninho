@@ -15,7 +15,6 @@ using namespace std;
 
 #define gnl cout << endl
 #define olar cout << "olar" << endl
-#define fastio ios_base::sync_with_stdio(false); cin.tie(NULL)
 
 typedef long long int ll;
 typedef pair<int,int> pii;
@@ -27,7 +26,9 @@ const int INF = 0x3f3f3f3f;
 const ll llINF = 0x3f3f3f3f3f3f3f;
 
 int main(){
-    
+
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);    
     
 
 }
