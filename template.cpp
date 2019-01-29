@@ -15,7 +15,7 @@ using namespace std;
 
 #define gnl cout << endl
 #define olar cout << "olar" << endl
-#define ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL) fastio
+#define fastio ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL) 
 
 typedef long long int ll;
 typedef pair<int,int> pii;
