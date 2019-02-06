@@ -1,12 +1,10 @@
+//roubado descaradamente do macacario ITA
+//https://github.com/splucs/Competitive-Programming/blob/master/Macac%C3%A1rio/Graphs/dinic.cpp
 #include "bits/stdc++.h"
 using namespace std;
 
 const int MAXN=100100;
 const int MAXM=1001001;
-const int llINF = 0x3f3f3f3f;
-
-//roubado descaradamente do macacario ITA
-//https://github.com/splucs/Competitive-Programming/blob/master/Macac%C3%A1rio/Graphs/dinic.cpp
 
 int ned;
 int first[MAXN],to[MAXM],nxt[MAXM],work[MAXN];
@@ -32,8 +30,7 @@ void add(int u,int v, int f){
 int dfs(int u, int f, int s, int t){
 
 	if(u==t)	return f;
-	int df;
-	int v;
+	int df,v;
 
 	for(int &e = work[u];e!=-1;e=nxt[e]){
 	
@@ -85,9 +82,8 @@ bool bfs(int s, int t){
 int dinic(int s,int t){
 	int result=0,f;
 	while(bfs(s,t)){
-
 		memcpy(work,first,sizeof work);
-		while(f=dfs(s,llINF,s,t))	result+=f;
+		while(f=dfs(s,INF,s,t))	result+=f;
 	}
 	return result;
 }
