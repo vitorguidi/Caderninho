@@ -7,8 +7,8 @@ const int MAXN=100100;
 const int MAXM=1001001;
 
 int ned;
-int first[MAXN],to[MAXM],nxt[MAXM],work[MAXN];
-int dist[MAXN],cap[MAXM];
+int first[MAXN],dist[MAXN],work[MAXN];
+int nxt[MAXM],to[MAXM],cap[MAXM];
 
 void init(){
 	memset(first,-1,sizeof first);
