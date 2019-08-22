@@ -24,7 +24,6 @@ typedef vector<pii> vii;
 typedef pair<ll,ll> pll;
 
 const int INF = 0x3f3f3f3f;
-const int MOD = 1e9+7;
 
 int main(){
 
